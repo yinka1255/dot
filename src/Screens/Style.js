@@ -1,6 +1,5 @@
 import styled from 'styled-components/native'
 import {colors} from '../utils';
-import {Pressable} from 'react-native'
 const Body = styled.SafeAreaView`
   width: 100%;
   height: 100%;
