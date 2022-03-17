@@ -1,5 +1,5 @@
 
-import {doPostUpload} from '../utils/server';
+import {doPostUpload} from '../utils';
 
 async function uploadAction(payload, setProgress) {
     try{
