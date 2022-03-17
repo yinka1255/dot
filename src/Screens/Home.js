@@ -22,7 +22,8 @@ const Home = ({navigation}) => {
             cropping: true,
             multiple: false,
         }).then(image => {
-            setFileName(image.filename)
+            let filename = /[^/]*$/.exec(image.path)[0];
+            setFileName(Platform.OS === "android" ? filename : image.filename)
             setFileSize(JSON.stringify(image.size))
             setFilePath(Platform.OS === "android" ? image.path : image.sourceURL.replace("file://", ""))
             setImage(image)
