@@ -31,7 +31,6 @@ const doPostUpload = (payload, endpoint, setProgress) => {
         return res;
     })
     .catch((err)=> {
-        console.log(err, 'errA')
         throw err
     })  
 };
