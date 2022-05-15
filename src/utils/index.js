@@ -1,9 +1,9 @@
 //Core
 import colors from './colors'
-import { doPostUpload } from './server'
+import { doGet } from './server'
 
 export {
   //Core
   colors,
-  doPostUpload
+  doGet
 }

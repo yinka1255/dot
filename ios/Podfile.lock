@@ -316,18 +316,6 @@ PODS:
     - React-cxxreact (= 0.64.2)
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
-  - rn-fetch-blob (0.12.0):
-    - React-Core
-  - RNImageCropPicker (0.37.3):
-    - React-Core
-    - React-RCTImage
-    - RNImageCropPicker/QBImagePickerController (= 0.37.3)
-    - TOCropViewController
-  - RNImageCropPicker/QBImagePickerController (0.37.3):
-    - React-Core
-    - React-RCTImage
-    - TOCropViewController
-  - TOCropViewController (2.6.1)
   - toolbar-android (0.1.0-rc.2):
     - React
   - Yoga (1.14.0)
@@ -383,8 +371,6 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - rn-fetch-blob (from `../node_modules/rn-fetch-blob`)
-  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
   - "toolbar-android (from `../node_modules/@react-native-community/toolbar-android`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -401,7 +387,6 @@ SPEC REPOS:
     - FlipperKit
     - libevent
     - OpenSSL-Universal
-    - TOCropViewController
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -459,10 +444,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
-  rn-fetch-blob:
-    :path: "../node_modules/rn-fetch-blob"
-  RNImageCropPicker:
-    :path: "../node_modules/react-native-image-crop-picker"
   toolbar-android:
     :path: "../node_modules/@react-native-community/toolbar-android"
   Yoga:
@@ -507,9 +488,6 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  rn-fetch-blob: f065bb7ab7fb48dd002629f8bdcb0336602d3cba
-  RNImageCropPicker: 44e2807bc410741f35d4c45b6586aedfe3da39d2
-  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   toolbar-android: 404f4450b203597e7b417f714ff417bed562a1be
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
