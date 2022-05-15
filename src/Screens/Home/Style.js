@@ -34,15 +34,6 @@ const MainContent = styled.ScrollView`
   height: 100%;
   align-self: center;
 `
-const OutlineButtonPurple = styled.TouchableOpacity`
-  align-self: center;
-  margin-bottom: 60px;
-  margin-top: 20px;
-  border-color: ${colors.LIGHT_PURPLE};
-  border-width: 1.3px;
-  padding: 10px 20px;
-  border-radius: 3px;
-`
 const ButtonText = styled.Text`
   font-size: 16px;
   color: ${colors.BLACK};
@@ -78,7 +69,6 @@ export {
     BlackCenteredtext,
     DeepBlackCenteredtext,
     MainContent,
-    OutlineButtonPurple,
     ButtonText ,
     NomineeCard,
     SelectButton,
