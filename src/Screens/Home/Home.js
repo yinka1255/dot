@@ -14,7 +14,6 @@ const Home = () => {
     const getBallots = async () => {
         try{
         const res = await getBallotData();
-        console.log(JSON.stringify(res.data.items),'res.data')
         setBallots(res.data.items)
         }
         catch(err){
@@ -70,6 +69,8 @@ const Home = () => {
                         numColumns={2}
                         style={{ flex: 1 }}
                         data={ballot.items}
+                        maxToRenderPerBatch={4}
+                        initialNumToRender={4}
                         keyExtractor={item => ballot.items.indexOf(item).toString()}
                         renderItem={({ item }) => displayItem(item, ballot.id)}
                         showsHorizontalScrollIndicator={false}
