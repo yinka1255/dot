@@ -4,6 +4,7 @@
 
 <ul>
   <li>run "npm i"</li>
+  <li>run "npm run backend"</li>
   <li>run "cd ios && pod install" (to run on ios)</li>
   <li>run "react-native run-ios"</li>
 </ul>
