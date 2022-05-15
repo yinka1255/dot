@@ -3,6 +3,7 @@ import { StatusBar, Alert, Image, FlatList, View } from 'react-native';
 import {colors} from '../../utils';
 import {Body, MainContent, NomineeCard, styles, BlackCenteredtext,SelectButton, ButtonText, DeepBlackCenteredtext } from './Style'
 import { getBallotData } from '../../actions/ballots';
+import NomineeCardList from '../Components/Lists/NomineeCardList';
 
 const Home = () => {
     const [ballots, setBallots] = useState()
@@ -63,18 +64,16 @@ const Home = () => {
             <MainContent>
                 {ballots && ballots.map((ballot)=> (
                     <>
-                    <DeepBlackCenteredtext>{ballot.id.toUpperCase()}</DeepBlackCenteredtext>
-                    <FlatList
-                        columnWrapperStyle={{justifyContent: 'space-between',marginBottom: 20, }}
-                        numColumns={2}
-                        style={{ flex: 1 }}
-                        data={ballot.items}
-                        maxToRenderPerBatch={4}
-                        initialNumToRender={4}
-                        keyExtractor={item => ballot.items.indexOf(item).toString()}
-                        renderItem={({ item }) => displayItem(item, ballot.id)}
-                        showsHorizontalScrollIndicator={false}
-                    />
+                        <DeepBlackCenteredtext>{ballot.id.toUpperCase()}</DeepBlackCenteredtext>
+                        <NomineeCardList 
+                            columnWrapperStyle={{justifyContent: 'space-between',marginBottom: 20, }}
+                            numColumns={2}
+                            styles={{ flex: 1 }}
+                            ballot={ballot}
+                            maxToRenderPerBatch={4}
+                            initialNumToRender={4}
+                            displayItem={displayItem}
+                        />
                     </>
                 ))}
             </MainContent>
