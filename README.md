@@ -1,15 +1,20 @@
 # dot
 
-Pull this project on your PC
-run "npm i"
-run "cd ios && pod install" (to run on ios)
-run "react-native run-ios"
+**Pull this project on your PC**
 
-Prerequisites
+<ul>
+  <li>run "npm i"</li>
+  <li>run "cd ios && pod install" (to run on ios)</li>
+  <li>run "react-native run-ios"</li>
+</ul>
 
-Node.js > 12 and npm (Recommended: Use nvm)
-Watchman
-Xcode 13 or above
-Cocoapods 1.10.1
-JDK > 11
-Android Studio and Android SDK
+**Prerequisites**
+
+<ul>
+  <li>Node.js > 12 and npm (Recommended: Use nvm)</li>
+  <li>Watchman</li>
+  <li>Xcode 13 or above</li>
+  <li>Cocoapods 1.10.1</li>
+  <li>JDK > 11</li>
+  <li>Android Studio and Android SDK</li>
+  </ul>
